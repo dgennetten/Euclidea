@@ -8,7 +8,7 @@
         var mdParser = new Remarkable();
         mdContainer.html(mdParser.render(data));
 
-        //隐藏标题
+        //隐藏标题 Hide title
         $('h3', mdContainer).each(function () {
             if (/解法$/.test($(this).text())) {
                 $(this).hide();
@@ -18,7 +18,7 @@
 
         $('a', mdContainer).addClass('showfig');
 
-        //修改h4标题
+        //修改h4标题 Modify h4 title
         $('h4', mdContainer).each(function () {
             if (/解题开始$/.test($(this).text())) {
                 var $ul = $(this).next('ul').eq(0);
@@ -28,7 +28,7 @@
             }
         });
 
-        //修改链接功能
+        //修改链接功能 Modify link function
         var fnTitleClicked = function (ele) {
             var url = $(this).attr('data-img'),
                 $link = $(this);
@@ -48,7 +48,7 @@
             $(this).click(fnTitleClicked);
         });
 
-        //步骤工具
+        //步骤工具 Step tool
         var toolDict = {
             '点': 'Point',
             '直线': 'Line',
