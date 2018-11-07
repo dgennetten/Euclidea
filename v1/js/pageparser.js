@@ -88,7 +88,7 @@
 
     });
 
-    //固定导航菜单
+    //固定导航菜单 Fixed navigation menu
     var $ul = $('header ul'), topUl = parseInt($(document.body).css('padding-top')) >= 50 ? 112 : 62,
         currentUlFixStatus = false, shouldUlFixStatus = false;
 
