@@ -187,7 +187,7 @@
                 var h = ('00000' + (conf.indexHideId++)).slice(-5),
                     extClass = (t.match(/步骤/)) ? 'step-container' : '';
                 html.push('<span class="vm">' + t + '</span>');
-                html.push('<button class="vm" data-h="' + h + '">点击显示</button>');
+                html.push('<button class="vm" data-h="' + h + '">Show</button>');
 
                 html.push('<figure class="vm ' + extClass + ' nodisp" data-h="' + h + '">' + c);
             }
